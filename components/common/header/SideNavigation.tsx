@@ -7,14 +7,15 @@ interface Props {
 }
 
 const SideNavigation = ({ openMenu, setOpenMenu }: Props) => {
+  
   const showMenu =
-    "flex flex-col fixed right-0 top-0 h-screen w-1/2 overflow-y-auto bg-white transition ease-in-out delay-150 rounded-tl-3xl rounded-bl-3xl -mx-1 z-10";
+    "fixed right-0 top-0 h-screen overflow-y-auto bg-white transition ease-in-out delay-150 z-10";
   return (
     <nav className="md:hidden" onClick={() => setOpenMenu(!openMenu)}>
       {openMenu ? (
-        <BurgerMenu className={`${showMenu} translate-x-full`} />
+        <BurgerMenu className={`${showMenu} translate-x-full w-full`} />
       ) : (
-        <BurgerMenu className={`${showMenu} translate-x-0`} />
+        <BurgerMenu className={`${showMenu} translate-x-0 w-full`} />
       )}
     </nav>
   );
