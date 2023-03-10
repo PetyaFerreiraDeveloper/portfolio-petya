@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Meta title={'Petya\'s Projects'} description={'Profile and Projects by Petya Naydenova Ferreira'} />
       <main className=''>
-        <p className={`${inter.className} text-red-500`}>hello world</p>
+        <p className={`${inter.className} text-red-700`}>hello world</p>
       </main>
     </>
   )

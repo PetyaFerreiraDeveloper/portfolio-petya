@@ -15,6 +15,7 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           href="mailto:petianaidenova@gmail.com"
           target="_blank"
           rel="noreferrer"
+          aria-label="email"
         >
           <EmailIcon
             width={width}
@@ -29,6 +30,7 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           href="https://www.linkedin.com/in/petyaferreira/"
           target="_blank"
           rel="noreferrer"
+          aria-label="linkedin"
         >
           <LinkedinIcon
             width={width}
@@ -43,6 +45,7 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           href="https://www.youtube.com/channel/UCt1QTbHaFvCWsAsR34jLzrQ"
           target="_blank"
           rel="noreferrer"
+          aria-label="youtube"
         >
           <YoutubeIcon
             width={width}
@@ -57,6 +60,7 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           href="https://github.com/PetyaFerreiraDeveloper"
           target="_blank"
           rel="noreferrer"
+          aria-label="github"
         >
           <GithubIcon
             width={width}

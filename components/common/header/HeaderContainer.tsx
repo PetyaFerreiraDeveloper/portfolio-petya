@@ -20,6 +20,7 @@ const HeaderContainer = () => {
         <button 
             onClick={() => setOpenMenu(!openMenu)}
             className="md:hidden py-4"
+            aria-label="burger-menu"
         >
             <BurgerIcon width={'25'} height={'25'} fill={'white'} />
         </button>
