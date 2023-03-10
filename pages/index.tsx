@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Karla } from 'next/font/google'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import Meta from '@/layout/Meta'
 
 const karla = Karla({ subsets: ['latin'] });
@@ -12,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Meta title={'Petya\'s Projects'} description={'Profile and Projects by Petya Naydenova Ferreira'} />
-      <main className={styles.main}>
+      <main className=''>
         <p className={`${inter.className} text-red-500`}>hello world</p>
       </main>
     </>
