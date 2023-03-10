@@ -1,12 +1,15 @@
-import React from 'react'
+import { Inter } from 'next/font/google'
+import Meta from '@/layout/Meta'
 
-const FutureProjects = () => {
+const inter = Inter({ subsets: ['latin'] });
+
+export default function FutureProjects() {
   return (
-    <div>
-        
-        <p>Future Projects</p>
-    </div>
+    <>
+      <Meta title={'Petya\'s pipeline of projects'} description={'Projects pipeline for Petya Naydenova Ferreira'} />
+      <main className=''>
+        <p className={`${inter.className}`}>future projects</p>
+      </main>
+    </>
   )
 }
-
-export default FutureProjects

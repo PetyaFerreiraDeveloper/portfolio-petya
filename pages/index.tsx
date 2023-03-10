@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <>
-      <Meta title={'Petya\'s Projects'} description={'Profile and Projects by Petya Naydenova Ferreira'} />
+      <Meta title={'Petya\'s Resume'} description={'This is Petya Naydenova Ferreira resume and current projects'} />
       <main className=''>
         <p className={`${inter.className} text-red-700`}>hello world</p>
       </main>
