@@ -16,7 +16,12 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           target="_blank"
           rel="noreferrer"
         >
-          <EmailIcon width={width} height={height} fill={fill} />
+          <EmailIcon
+            width={width}
+            height={height}
+            fill={fill}
+            className="p-3"
+          />
         </a>
       </li>
       <li>
@@ -25,7 +30,12 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedinIcon width={width} height={height} fill={fill} />
+          <LinkedinIcon
+            width={width}
+            height={height}
+            fill={fill}
+            className="p-3"
+          />
         </a>
       </li>
       <li>
@@ -34,7 +44,12 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           target="_blank"
           rel="noreferrer"
         >
-          <YoutubeIcon width={width} height={height} fill={fill} />
+          <YoutubeIcon
+            width={width}
+            height={height}
+            fill={fill}
+            className="p-3"
+          />
         </a>
       </li>
       <li>
@@ -43,7 +58,12 @@ const SocialMedia = ({ width, height, fill, className }: ISvgType) => {
           target="_blank"
           rel="noreferrer"
         >
-          <GithubIcon width={width} height={height} fill={fill} />
+          <GithubIcon
+            width={width}
+            height={height}
+            fill={fill}
+            className="p-3"
+          />
         </a>
       </li>
     </ul>

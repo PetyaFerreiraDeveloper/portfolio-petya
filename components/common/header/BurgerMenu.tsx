@@ -13,7 +13,7 @@ const BurgerMenu = ({ className }: Props) => {
       className={`${className} flex justify-between bg-gray-300 bg-opacity-20`}
     >
       <span></span>
-      <nav className={`bg-white w-1/2 rounded-tl-3xl rounded-bl-3xl `}>
+      <nav className={`bg-white w-2/3 rounded-tl-3xl rounded-bl-3xl `}>
         <div className="flex justify-between gap-4 py-4 px-8">
           <h3>Get in touch with me</h3>
           <CloseIcon
@@ -30,13 +30,13 @@ const BurgerMenu = ({ className }: Props) => {
         />
         <ul className="py-4 px-8 flex flex-col gap-4">
           <li>
-            <Link href="/about">About me</Link>
+            <Link href="/about" className="py-4">About me</Link>
           </li>
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects" className="py-4">Projects</Link>
           </li>
           <li>
-            <Link href="/future-projects">Future projects and ideas</Link>
+            <Link href="/future-projects" className="py-4">Future projects and ideas</Link>
           </li>
         </ul>
       </nav>
