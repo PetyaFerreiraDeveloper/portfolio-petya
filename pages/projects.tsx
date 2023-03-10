@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div>
         
-        <p>why is this happening</p>
+        <p>Projects</p>
     </div>
   )
 }
