@@ -1,6 +1,7 @@
 import React from 'react';
 import { Karla } from 'next/font/google';
 import { Montserrat_Alternates } from 'next/font/google';
+import Meta from '@/layout/Meta';
 
 const karla = Karla({ subsets: ['latin'] });
 const alternates = Montserrat_Alternates({ 
@@ -11,6 +12,8 @@ const alternates = Montserrat_Alternates({
 
 const About = () => {
   return (
+    <>
+    <Meta title={'About Petya'} description={'Resume and cool facts about Petya'} />
     <div>
 
         <p>test the font</p>
@@ -19,6 +22,7 @@ const About = () => {
         <p className={alternates.className}>да тестваме</p>
         <p>да тестваме</p>
     </div>
+    </>
   )
 }
 
