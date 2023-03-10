@@ -2,10 +2,9 @@ import React from "react";
 
 interface ILayoutProps {
   children: React.ReactNode;
-  className?: string;
 }
 
-const Layout = ({ children, className }: ILayoutProps) => {
+const Layout = ({ children }: ILayoutProps) => {
   return (
     <div className='bg-green-500 flex flex-col min-h-screen'>
       <header className="bg-slate-800 text-white text-center w-full">Header</header>
