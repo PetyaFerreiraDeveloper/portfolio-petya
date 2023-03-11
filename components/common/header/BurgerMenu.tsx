@@ -1,7 +1,7 @@
 import CloseIcon from "@/components/svgs/CloseIcon";
-import Link from "next/link";
 import React from "react";
 import SocialMedia from "../social-media/SocialMedia";
+import Menu from "./Menu";
 
 interface Props {
   className: string;
@@ -28,17 +28,7 @@ const BurgerMenu = ({ className }: Props) => {
           height={"25"}
           className="flex justify-between py-4 px-8"
         />
-        <ul className="py-4 px-8 flex flex-col gap-4">
-          <li>
-            <Link href="/about" className="py-4">About me</Link>
-          </li>
-          <li>
-            <Link href="/projects" className="py-4">Projects</Link>
-          </li>
-          <li>
-            <Link href="/future-projects" className="py-4">Future projects and ideas</Link>
-          </li>
-        </ul>
+        <Menu className={"py-4 px-8 flex flex-col gap-4"} />
       </nav>
     </div>
   );

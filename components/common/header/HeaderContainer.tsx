@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
 import Link from "next/link";
-import SocialMedia from "../social-media/SocialMedia";
 import BurgerIcon from "@/components/svgs/BurgerIcon";
 import SideNavigation from "./SideNavigation";
 import DarkModeToggle from "./DarkModeToggle";
+import Menu from "./Menu";
+import EmailIcon from "@/components/svgs/EmailIcon";
 
 const HeaderContainer = () => {
   const [openMenu, setOpenMenu] = useState(true);
@@ -15,11 +16,15 @@ const HeaderContainer = () => {
         <Link href={"/"} className="py-4">
           {"Petya Ferreira"}
         </Link>
+        <Menu className={'flex gap-4'}/>
         <Link
           href={"mailto:petianaidenova@gmail.com"}
-          className="hidden md:flex"
+          className="hidden md:flex items-center gap-2"
         >
+          <>
           {"Get in touch"}
+          <EmailIcon width={"20"} height={"20"} fill={'white'}/>
+          </>
         </Link>
         <div className="flex items-center gap-10">
           <DarkModeToggle />
