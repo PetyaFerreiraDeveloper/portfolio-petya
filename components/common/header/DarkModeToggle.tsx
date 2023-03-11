@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useContext } from "react";
 import { MyThemeContext } from "@/context/myThemeContext";
 import SunIcon from "@/components/svgs/SunIcon";
 import MoonIcon from "@/components/svgs/MoonIcon";
@@ -6,45 +6,6 @@ import MoonIcon from "@/components/svgs/MoonIcon";
 const DarkModeToggle = () => {
   const themeCtx: { isDarkTheme?: boolean; toggleThemeHandler: () => void } =
     useContext(MyThemeContext);
-
-  // let [isDarkTheme, setIsDarkTheme] = useState(false);
-  // useEffect(() => initialThemeHandler());
-
-  // function isLocalStorageEmpty(): boolean {
-  //   return !localStorage.getItem("isDarkTheme");
-  // }
-
-  // function initialThemeHandler(): void {
-  //   if (isLocalStorageEmpty()) {
-  //     localStorage.setItem("isDarkTheme", `true`);
-  //     document!.querySelector("body")!.classList.add("dark");
-  //     setIsDarkTheme(true);
-  //   } else {
-  //     const isDarkTheme: boolean = JSON.parse(
-  //       localStorage.getItem("isDarkTheme")!
-  //     );
-  //     isDarkTheme && document!.querySelector("body")!.classList.add("dark");
-  //     setIsDarkTheme(() => {
-  //       return isDarkTheme;
-  //     });
-  //   }
-  // }
-
-  // function toggleThemeHandler(): void {
-  //   const isDarkTheme: boolean = JSON.parse(
-  //     localStorage.getItem("isDarkTheme")!
-  //   );
-  //   setIsDarkTheme(!isDarkTheme);
-  //   toggleDarkClassToBody();
-  //   setValueToLocalStorage();
-  // }
-
-  // function toggleDarkClassToBody(): void {
-  //   document!.querySelector("body")!.classList.toggle("dark");
-  // }
-  // function setValueToLocalStorage(): void {
-  //   localStorage.setItem("isDarkTheme", `${!isDarkTheme}`);
-  // }
 
   let toggleMode;
 
