@@ -12,7 +12,7 @@ const SunIcon = (props: ISvgType) => {
         fill={fill}
         viewBox="0 0 24 24"
         strokeWidth="1.5"
-        stroke="currentColor"
+        stroke={fill}
         width={width}
         height={height}
       >

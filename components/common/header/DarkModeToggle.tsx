@@ -3,32 +3,29 @@ import SunIcon from "@/components/svgs/SunIcon";
 import MoonIcon from "@/components/svgs/MoonIcon";
 
 const DarkModeToggle = () => {
-  let [day, setDay] = useState(false);
+  let [night, setNight] = useState(false);
 
-  let mode;
+  let toggleMode;
 
-  // if (day) {
-  //   mode = `animation-goRight`;
-  // } else {
-  //   mode = `animation-goLeft`;
-  // }
-
-  if (day) {
-    mode = `right-0`;
+  if (night) {
+    toggleMode = "-translate-x-[40px]";
   } else {
-    mode = `left-0`;
+    toggleMode = "translate-x-0";
   }
+  console.log(night);
 
   return (
     <div className="flex items-center gap-4 bg-gray-500 rounded-xl relative">
       <div
-        className={`w-6 h-6 bg-red-500 rounded-full absolute ${mode} `} //absolute transition ease-in-out delay-150 
+        className={`w-6 h-6 bg-orange-500 opacity-75 rounded-full absolute transition duration-1000 ease-in-out transform right-0 ${toggleMode} `}
       ></div>
-      <button onClick={() => setDay(false)} className="" aria-label="">
-        <SunIcon width={"25"} height={"25"} fill={"white"} />
-      </button>
-      <button onClick={() => setDay(true)} className="0" aria-label="">
+
+      <button onClick={() => setNight(true)} className="0" aria-label="">
         <MoonIcon width={"25"} height={"25"} fill={"white"} />
+      </button>
+
+      <button onClick={() => setNight(false)} className="" aria-label="">
+        <SunIcon width={"25"} height={"25"} fill={"white"} />
       </button>
     </div>
   );
