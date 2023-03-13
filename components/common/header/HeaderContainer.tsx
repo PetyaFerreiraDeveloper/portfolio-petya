@@ -16,7 +16,7 @@ const HeaderContainer = () => {
         <Link href={"/"} className="py-4 text-red-500 ">
           {"Petya Ferreira"}
         </Link>
-        <Menu className={'flex gap-4'}/>
+        <Menu className={'hidden md:flex gap-4'}/>
         <Link
           href={"mailto:petianaidenova@gmail.com"}
           className="hidden md:flex items-center gap-2"
