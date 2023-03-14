@@ -10,15 +10,15 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <MyThemeContextProvider>
-      <Layout>
+       <Layout> 
         {" "}
         <style jsx global>{`
           html {
             font-family: ${montserrat.style.fontFamily};
           }
-        `}</style>
+        `}</style> 
         <Component {...pageProps} />
-      </Layout>
+      </Layout> 
     </MyThemeContextProvider>
   );
 }

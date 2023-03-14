@@ -1,7 +1,7 @@
 import { Karla } from 'next/font/google'
 import { Inter } from 'next/font/google'
 import Meta from '@/layout/Meta'
-import Hero from '@/components/common/hero/Hero';
+import Hero from '@/components/hero/Hero';
 
 const karla = Karla({ subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });

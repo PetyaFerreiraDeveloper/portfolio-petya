@@ -1,11 +1,14 @@
 import React from "react";
+import CategoryHeader from "../common/category-header/CategoryHeader";
+import SectionHeader from "../common/section-header/SectionHeader";
 
 const Hero = () => {
   return (
-    <section className="flex flex-col gap-10  justify-center">
+    <section className="flex flex-col gap-10 h-screen bg-red-300 justify-center">
       <div>
-        <span>Hello, my name is</span>
-        <h2>Petya Antonova Naydenova Ferreira</h2>
+        <CategoryHeader text={"Hello, my name is"} />
+        <SectionHeader text={"Petya Antonova Naydenova Ferreira"} />
+        <h2></h2>
       </div>
       <p>
         I am a fullstack developer driven by the desire to create web
