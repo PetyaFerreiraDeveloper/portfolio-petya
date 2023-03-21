@@ -21,6 +21,7 @@ const About = () => {
         <p className={alternates.className}>test the font</p>
         <p className={alternates.className}>да тестваме</p>
         <p>да тестваме</p>
+        <p>Kakvo da napisha</p>
     </div>
     </>
   )
